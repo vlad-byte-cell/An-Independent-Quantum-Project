@@ -3,4 +3,5 @@
 
 This interaction-free measurement is scalable by manifold repetition of the circuit, thereby measuring the qubit (in this specific case, q[2]) interaction-freely with the probability of 50% on each repetition, regardless of the qubit's eigenstate (|0⟩ or |1⟩). This circuit preserves some abilities of traditional ways of counterfactual quantum computation: the overall probability of measuring the qubit interaction-freely can be made arbitrarily close to 1. But the point is, this version of performing a counterfactual computation has no risk of interaction at all (instead of a probability that is arbitrarily close to 0).
 
+
 Code is licensed under GPLv3.
