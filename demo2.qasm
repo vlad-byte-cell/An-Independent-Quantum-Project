@@ -39,10 +39,7 @@ creg cregone[2];
 ry(1.9106332362490185563277142) q[0];
 h ancilla[2];
 // @phaseDisk
-// Simultaneous non-demolition parity + Hamming weight measurement
-// Parity encoding on ancilla[0]
-// Hamming weight encoding on ancilla[1]
-// Perform the measurements, reset qubits
+
 barrier q, ancilla; // @phaseDisk
 h ancilla[0];
 ch ancilla[2], ancilla[1];
