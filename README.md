@@ -24,11 +24,18 @@ Let 'z' denote the Confidence Interval (CI) of the first sample, where the stand
 Assume $N=10000$. If we enter the above 'complicated' formula into Microsoft Excel, we get: 
 ![Visualisation of the final posterior probability as a function of the confidence interval of the first sample (a graph)](SamplingWith_N=10000.png)
 Now, let's just work with $N=4$.
+If we get 1 black card, which is exactly in the middle of the graph, then the probability would be as small as 37,5%. And if we get 0 or 2 black cards in the first draw, then the probability of continuation is 75%. 
 
+We can now simulate this with a quantum circuit. In fact, there is no need to distinguish between 0 and 2 black cards, because they are linked to the same probability value. 
 
+![Dicke states and their subsequent measurement as a quantum circuit](demo_QuantumCircuit.png)
+![The corresponding histogram](demo_histogram.png)
 The probabilities from left to right are $41\frac{2}{3}$%, $25$%, $8\frac{1}{3}$%, $25$%. If the qubit ancilla[0] is 0, then the probability of ancilla[2] being 1 is (25% / (41⅔% + 25%)) × 100% = 37.5%. And if the qubit ancilla[0] is 1, then the probability of ancilla[2] being 1 is 75%. 
-![The mechanism behind the CNOT as a quantum circut](demo1_QuantumCircuit.svg)
-![The corresponding histogram](demo1_histogram.png)
+
+
+We can now simplify the quantum circuit above: 
+![Simplifying the quantum circuit at a negligible cost of altering the probabilities from the histogram](demoSimplified_QuantumCircuit.png)
+![The corresponding histogram](demoSimplified_histogram.png)
 
 
 ![The CNOT's visualisation as a quantum circuit](CNOT_QuantumCircuit.svg)
