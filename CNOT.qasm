@@ -5,7 +5,6 @@ qreg q[2];
 qreg anc[1];
 creg c[2];
 h q[1];
-h q[0];
 cx q[1], anc[0];
 tdg anc[0];
 cx q[0], anc[0];
