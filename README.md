@@ -34,7 +34,7 @@ The probabilities from left to right are $41\frac{2}{3}$%, $25$%, $8\frac{1}{3}$
 
 
 We can now simplify the quantum circuit above: 
-![Simplifying the quantum circuit at a negligible cost of altering the probabilities from the histogram](demoSimplified_QuantumCircuit.png)
+![Simplifying the quantum circuit at a negligible cost of altering the probabilities from the histogram](demoSimplified_QuantumCircuit.svg)
 ![The corresponding histogram](demoSimplified_histogram.png)
 
 
