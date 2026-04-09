@@ -35,8 +35,10 @@ The probabilities from left to right are $41\frac{2}{3}$%, $25$%, $8\frac{1}{3}$
 
 We can now simplify the quantum circuit above: 
 ![Simplifying the quantum circuit at a negligible cost of altering the probabilities from the histogram](demoSimplified_QuantumCircuit.svg)
+Just for reference, this simplification alters the probabilities above a bit:
 ![The corresponding histogram](demoSimplified_histogram.png)
 
+It's easy to see that there is no signaling in any of the two circuits. 
 
 ![The CNOT's visualisation as a quantum circuit](CNOT_QuantumCircuit.svg)
 
