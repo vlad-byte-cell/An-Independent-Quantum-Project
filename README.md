@@ -38,7 +38,23 @@ We can now simplify the quantum circuit above:
 Just for reference, this simplification alters the probabilities above, a bit:
 
 <img src="demoSimplified_histogram.png" width="300" alt="the corresponding histogram">
-It's easy to see that, there is no signaling in any of the two circuits. However, it has an interesting feature that we will soon take a closer look at. For now, let's look for the corresponding CNOT decomposition that makes the full use of it:
+It's easy to see that, there is no signaling in any of the two circuits:
+
+### Impossibility of backward signaling — proof
+
+If Bob measures in the H/V basis, Alice’s reduced state is
+
+$\rho_A^{HV}=\tfrac12\bigl(|H\rangle\langle H|+|V\rangle\langle V|\bigr)=\tfrac12 I.$
+
+
+If Bob measures in the D/A basis, Alice’s reduced state is
+
+$\rho_A^{DA}=\tfrac12\bigl(|D\rangle\langle D|+|A\rangle\langle A|\bigr)=\tfrac12 I.$
+
+
+Since $\(\rho_A^{HV}=\rho_A^{DA}\)$, Alice’s local state is identical in both cases, so Bob’s choice of basis cannot be detected by Alice.
+
+However, the shared structure of these circuits has an interesting feature that we will soon take a closer look at. For now, let's look for the corresponding CNOT decomposition that makes the full use of it:
 
 ![The CNOT's visualisation as a quantum circuit](CNOT_QuantumCircuit.svg)
 What's special about the decomposition, it does not make use of a sequence of the two following equalities to provide the complete CNOT-matrix (up to the global phase): 
