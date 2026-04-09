@@ -45,6 +45,7 @@ Just for reference, this simplification alters the probabilities above, a bit:
 
 <img src="demoSimplified_histogram.png" width="300" alt="the corresponding histogram">
 It's easy to see that, there is no signaling in any of the two circuits, as we run into the following no-go-tradeoff: the idea tries to achieve the same result with this circuit: 
+
 ![What the experiment setting tries and fails](Failure_QuantumCircuit.svg)
 
 However, the shared structure of these circuits has an interesting feature that we will soon take a closer look at. For now, let's look for the corresponding CNOT decomposition that makes the full use of it:
