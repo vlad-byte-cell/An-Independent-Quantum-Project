@@ -35,13 +35,16 @@ The probabilities from left to right are $41\frac{2}{3}$%, $25$%, $8\frac{1}{3}$
 
 We can now simplify the quantum circuit above: 
 ![Simplifying the quantum circuit at a negligible cost of altering the probabilities from the histogram](demoSimplified_QuantumCircuit.svg)
-Just for reference, this simplification alters the probabilities above a bit:
-![The corresponding histogram](demoSimplified_histogram.png)
+Just for reference, this simplification alters the probabilities above, a bit:
 
-It's easy to see that there is no signaling in any of the two circuits. 
+<img src="demoSimplified_histogram.png" width="300">
+It's easy to see that, there is no signaling in any of the two circuits. However, it has an interesting feature that we will soon take a closer look at. For now, let's look for the corresponding CNOT decomposition that makes the full use of it:
 
 ![The CNOT's visualisation as a quantum circuit](CNOT_QuantumCircuit.svg)
+What's special about the decomposition, it does not make use of a sequence of the two following equalities to provide the CNOT-matrix:
 
+<img src="https://quantum.cloud.ibm.com/learning/images/courses/foundations-of-quantum-error-correction/fault-tolerant-quantum-computing/CNOT-error-propagation.svg" alt="CNOT error propagation" width="300">
 
+Additionally, it achieves the clean ancilla primitive through interference. So, the ancilla qubit's state thereafter is the same as before the CNOT (apart from the global phase).
 
 Code and pictures of the corresponding quantum circuits are licensed under GPLv3.
