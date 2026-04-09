@@ -50,7 +50,7 @@ It's easy to see that, there is no signaling in any of the two circuits, as we r
 
 This doesn't work because this is no different from a classic deck of cards: up to the point where the agent finally decides, the whole deck is already drawn. 
 
-If we still want the numbers to work, we take the former case, which works well as a quantum circuit. The main point of this study is, the probabilities that the hypergeometric model delivers are not to be taken for granted: while being only a correlation, the function from the graph above only works for the quantum version of the experiment setting, rather than the classical one. Based on this, we can work out the conditions to be met by the quantum deck of cards.
+If we still want the numbers to work, we take the former case, which works well as a quantum circuit. The main point of this study is, the probabilities that the hypergeometric model delivers are not to be taken for granted: while being only a correlation, the function from the graph above only works for the quantum version of the experiment setting, rather than the classical one. Based on this, we can work out certain condition to be met by the quantum deck of cards: the agent's lack of knowledge about the quantum system must be ontological, not epistemic (quantum indeterminacy). In the classic deck of cards, this criterion is simply assumed, so the correlation does not even arise.
 
 Additionally, the shared structure of the first circuit and its simplified version has an interesting feature that we will soon take a closer look at. For now, let's look for the corresponding CNOT decomposition that makes the full use of it:
 
