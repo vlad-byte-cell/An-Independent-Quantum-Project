@@ -37,13 +37,13 @@ We can now simplify the quantum circuit above:
 ![Simplifying the quantum circuit at a negligible cost of altering the probabilities from the histogram](demoSimplified_QuantumCircuit.svg)
 Just for reference, this simplification alters the probabilities above, a bit:
 
-<img src="demoSimplified_histogram.png" width="300">
+<img src="demoSimplified_histogram.png" width="300" alt="the corresponding histogram">
 It's easy to see that, there is no signaling in any of the two circuits. However, it has an interesting feature that we will soon take a closer look at. For now, let's look for the corresponding CNOT decomposition that makes the full use of it:
 
 ![The CNOT's visualisation as a quantum circuit](CNOT_QuantumCircuit.svg)
 What's special about the decomposition, it does not make use of a sequence of the two following equalities to provide the complete CNOT-matrix (up to the global phase): 
 
-<img src="https://quantum.cloud.ibm.com/learning/images/courses/foundations-of-quantum-error-correction/fault-tolerant-quantum-computing/CNOT-error-propagation.svg" alt="CNOT error propagation" width="300">
+<img src="https://quantum.cloud.ibm.com/learning/images/courses/foundations-of-quantum-error-correction/fault-tolerant-quantum-computing/CNOT-error-propagation.svg" alt="CNOT error propagation" width="300" alt ="An X gate on the control qubit before the CNOT is equivalent to an X gate on both the control and target qubits after the CNOT; a Z gate on the target qubit before the CNOT is equivalent to a Z gate on both the control and target qubits after the CNOT">
 
 Additionally, it achieves the clean ancilla primitive through interference. So, the ancilla qubit's state thereafter is the same as before the CNOT.
 
