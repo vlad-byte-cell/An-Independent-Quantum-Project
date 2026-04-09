@@ -25,9 +25,9 @@ Assume $N=10000$. If we enter the above 'complicated' formula into Microsoft Exc
 ![Visualisation of the final posterior probability as a function of the confidence interval of the first sample (a graph)](SamplingWith_N=10000.png)
 Now, let's just work with $N=4$.
 
-![The mechanism behind the CNOT as a quantum circut](demo1_QuantumCircuit.svg)
-The probabilities from left to right are $41\frac{2}{3}$%, $25$%, $8\frac{1}{3}$%, $25$%. If the qubit ancilla[0] is 0, then the probability of ancilla[2] being 1 is (25% / (41⅔% + 25%)) × 100% = 37.5%. And if the qubit ancilla[0] is 1, then the probability of ancilla[2] being 1 is 75%. 
 
+The probabilities from left to right are $41\frac{2}{3}$%, $25$%, $8\frac{1}{3}$%, $25$%. If the qubit ancilla[0] is 0, then the probability of ancilla[2] being 1 is (25% / (41⅔% + 25%)) × 100% = 37.5%. And if the qubit ancilla[0] is 1, then the probability of ancilla[2] being 1 is 75%. 
+![The mechanism behind the CNOT as a quantum circut](demo1_QuantumCircuit.svg)
 ![The corresponding histogram](demo1_histogram.png)
 
 
