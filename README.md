@@ -22,19 +22,25 @@ The point is, the probability of continuation is not always $\frac{1}{2}$, it va
 Let 'z' denote the Confidence Interval (CI) of the first sample, where the standard deviation $\delta_0$ is a single unit: $z=\sqrt{\frac{(x-0.25*N)(\sqrt{N-1})}{N}}$. Then, $P(Continued|k_0=x)$ is approximately a function of 'z' (due to the Central Limit Theorem).
 
 Assume $N=10000$. If we enter the above 'complicated' formula into Microsoft Excel, we get: 
+
 ![Visualisation of the final posterior probability as a function of the confidence interval of the first sample (a graph)](SamplingWith_N=10000.png)
+
 Now, let's just work with $N=4$.
 If we get 1 black card, which is exactly in the middle of the graph, then the probability would be as small as 37,5%. And if we get 0 or 2 black cards in the first draw, then the probability of continuation is 75%. 
 
 We can now simulate this with a quantum circuit. In fact, there is no need to distinguish between 0 and 2 black cards, because they are linked to the same probability value. 
 
 ![Dicke states and their subsequent measurement as a quantum circuit](demo_QuantumCircuit.png)
+
 ![The corresponding histogram](demo_histogram.png)
+
 The probabilities from left to right are $41\frac{2}{3}$%, $25$%, $8\frac{1}{3}$%, $25$%. If the qubit ancilla[0] is 0, then the probability of ancilla[2] being 1 is (25% / (41⅔% + 25%)) × 100% = 37.5%. And if the qubit ancilla[0] is 1, then the probability of ancilla[2] being 1 is 75%. 
 
 
 We can now simplify the quantum circuit above: 
+
 ![Simplifying the quantum circuit at a negligible cost of altering the probabilities from the histogram](demoSimplified_QuantumCircuit.svg)
+
 Just for reference, this simplification alters the probabilities above, a bit:
 
 <img src="demoSimplified_histogram.png" width="300" alt="the corresponding histogram">
@@ -44,6 +50,7 @@ It's easy to see that, there is no signaling in any of the two circuits, as we r
 However, the shared structure of these circuits has an interesting feature that we will soon take a closer look at. For now, let's look for the corresponding CNOT decomposition that makes the full use of it:
 
 ![The CNOT's visualisation as a quantum circuit](CNOT_QuantumCircuit.svg)
+
 What's special about the decomposition, it does not make use of a sequence of the two following equalities to provide the complete CNOT-matrix (up to the global phase): 
 
 <img src="https://quantum.cloud.ibm.com/learning/images/courses/foundations-of-quantum-error-correction/fault-tolerant-quantum-computing/CNOT-error-propagation.svg" alt="CNOT error propagation" width="300" alt ="An X gate on the control qubit before the CNOT is equivalent to an X gate on both the control and target qubits after the CNOT; a Z gate on the target qubit before the CNOT is equivalent to a Z gate on both the control and target qubits after the CNOT">
