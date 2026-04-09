@@ -52,11 +52,11 @@ This doesn't work because this is no different from a classic deck of cards: up 
 
 If we still want the numbers to work, we take the former case, which works well as a quantum circuit. The main point of this study is, the probabilities that the hypergeometric model delivers are not to be taken for granted: while being only a correlation, the function from the graph above only works for the quantum version of the experiment setting, rather than the classical one. Based on this, we can work out the conditions to be met by the quantum deck of cards.
 
-However, the shared structure of these circuits has an interesting feature that we will soon take a closer look at. For now, let's look for the corresponding CNOT decomposition that makes the full use of it:
+Additionally, the shared structure of the first circuit and its simplified version has an interesting feature that we will soon take a closer look at. For now, let's look for the corresponding CNOT decomposition that makes the full use of it:
 
 ![The CNOT's visualisation as a quantum circuit](CNOT_QuantumCircuit.svg)
 
-What's special about the decomposition, it does not make use of a sequence of the two following equalities to provide the complete CNOT-matrix (up to the global phase): 
+What's special about the decomposition (here comes the feature), it does not make use of a sequence of the two following equalities to provide the complete CNOT-matrix (up to the global phase): 
 
 <img src="https://quantum.cloud.ibm.com/learning/images/courses/foundations-of-quantum-error-correction/fault-tolerant-quantum-computing/CNOT-error-propagation.svg" alt="CNOT error propagation" width="300" alt ="An X gate on the control qubit before the CNOT is equivalent to an X gate on both the control and target qubits after the CNOT; a Z gate on the target qubit before the CNOT is equivalent to a Z gate on both the control and target qubits after the CNOT">
 
