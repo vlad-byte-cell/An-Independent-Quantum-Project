@@ -1,4 +1,4 @@
-# Counterfactual Definiteness With No Interaction Risk
+# CNOT decomposition with clean ancilla primitive and with no chain of CNOTs
 
 
 
