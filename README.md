@@ -38,7 +38,9 @@ We can now simplify the quantum circuit above:
 Just for reference, this simplification alters the probabilities above, a bit:
 
 <img src="demoSimplified_histogram.png" width="300" alt="the corresponding histogram">
-It's easy to see that, there is no signaling in any of the two circuits. However, the shared structure of these circuits has an interesting feature that we will soon take a closer look at. For now, let's look for the corresponding CNOT decomposition that makes the full use of it:
+It's easy to see that, there is no signaling in any of the two circuits, as we run into the following no-go-tradeoff: the idea tries to achieve the same result with this circuit: 
+
+However, the shared structure of these circuits has an interesting feature that we will soon take a closer look at. For now, let's look for the corresponding CNOT decomposition that makes the full use of it:
 
 ![The CNOT's visualisation as a quantum circuit](CNOT_QuantumCircuit.svg)
 What's special about the decomposition, it does not make use of a sequence of the two following equalities to provide the complete CNOT-matrix (up to the global phase): 
