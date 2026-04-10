@@ -14,7 +14,7 @@ With the prior probability of continuation being set to 0.5, we get:
 
 $P(Continued|k_0=x) = \frac{P(k_0=x|Continued)*0,5}{P(k_0=x)}$
 
-There is also a more complicated formula:
+There is also a more complicated formula (the MS Excel graphs do not rely on it, though):
 
 $=\frac{\sum_{k_{1i}=0}^{\frac{1}{4}N}\sum_{k_{0j}=0}^{\frac{1}{2}N} (min[(1-(\sum_{y=0}^{k_{1i}+k_{0j}-1}\frac{3}{4}(\frac{0.5N}{y-1})(\frac{0.5N}{\frac{3}{4}N-y+1})));(\sum_{y=0}^{k_{1i}+k_{0j}}\frac{3}{4}(\frac{0.5N}{y})(\frac{0.5N}{\frac{3}{4}N-y}))])}{(\frac{0.5N}{x})(\frac{0.5N}{0.5N-x})}$
 
@@ -33,7 +33,7 @@ If we get 1 black card, which is exactly in the middle of the graph, then the pr
 
 We can now simulate this with a quantum circuit. In fact, there is no need to distinguish between 0 and 2 black cards, because they are linked to the same probability value. 
 
-![Dicke states and their subsequent measurement as a quantum circuit](assets/images/demo_QuantumCircuit.png)
+![Dicke states and their subsequent measurement as a quantum circuit](assets/images/demo_QuantumCircuit_V2.png)
 
 ![The corresponding histogram](assets/images/demo_histogram.png)
 
