@@ -26,7 +26,10 @@ Assume $N=10000$. If we enter the above 'complicated' formula into Microsoft Exc
 ![Visualisation of the final posterior probability as a function of the confidence interval of the first sample (a graph)](assets/images/SamplingWith_N=10000.png)
 
 Now, let's just work with $N=4$.
-If we get 1 black card, which is exactly in the middle of the graph, then the probability would be as small as 37,5%. And if we get 0 or 2 black cards in the first draw, then the probability of continuation is 75%. 
+If we get 1 black card, which is exactly in the middle of the graph, then the probability would be as small as 37,5%. And if we get 0 or 2 black cards in the first draw, then the probability of continuation is 75%.  It looks like this: 
+
+
+![Visualisation of the final posterior probability as a function of the confidence interval of the first sample with the population N = 4 (a graph)](assets/images/SamplingWith_N=4.png)
 
 We can now simulate this with a quantum circuit. In fact, there is no need to distinguish between 0 and 2 black cards, because they are linked to the same probability value. 
 
@@ -34,7 +37,7 @@ We can now simulate this with a quantum circuit. In fact, there is no need to di
 
 ![The corresponding histogram](assets/images/demo_histogram.png)
 
-The probabilities from left to right are $41\frac{2}{3}$%, $25$%, $8\frac{1}{3}$%, $25$%. If the qubit ancilla[0] is 0, then the probability of ancilla[2] being 1 is (25% / (41⅔% + 25%)) × 100% = 37.5%. And if the qubit ancilla[0] is 1, then the probability of ancilla[2] being 1 is 75%. 
+The probabilities from left to right are $41\frac{2}{3}$%, $25$%, $8\frac{1}{3}$%, $25$%. If the qubit ancilla[0] is 0, then the probability of ancilla[2] being 1 is (25% / (41⅔% + 25%)) × 100% = 37.5%. And if the qubit ancilla[0] is 1, then the probability of ancilla[2] being 1 is 75%.
 
 
 We can now simplify the quantum circuit above (the Hadamard on ancilla[2] represents the agent's decision, and the controlled Hadamard stays for the conditional continuation of the experiment, whose rules are outlined above): 
