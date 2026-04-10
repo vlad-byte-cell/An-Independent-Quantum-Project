@@ -37,7 +37,7 @@ We can now simulate this with a quantum circuit. In fact, there is no need to di
 The probabilities from left to right are $41\frac{2}{3}$%, $25$%, $8\frac{1}{3}$%, $25$%. If the qubit ancilla[0] is 0, then the probability of ancilla[2] being 1 is (25% / (41⅔% + 25%)) × 100% = 37.5%. And if the qubit ancilla[0] is 1, then the probability of ancilla[2] being 1 is 75%. 
 
 
-We can now simplify the quantum circuit above (the hadamard on ancilla[2] represents the agent's decision, and the controlled Hadamard stays for the conditional continuation of the experiment, whose rules are outlined above): 
+We can now simplify the quantum circuit above (the Hadamard on ancilla[2] represents the agent's decision, and the controlled Hadamard stays for the conditional continuation of the experiment, whose rules are outlined above): 
 
 ![Simplifying the quantum circuit at a negligible cost of altering the probabilities from the histogram](demoSimplified_QuantumCircuit.svg)
 (
