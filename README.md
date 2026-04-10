@@ -64,7 +64,7 @@ What's special about the decomposition (here comes the feature), it does not mak
 
 <img src="https://quantum.cloud.ibm.com/learning/images/courses/foundations-of-quantum-error-correction/fault-tolerant-quantum-computing/CNOT-error-propagation.svg" alt="CNOT error propagation" width="300" alt ="An X gate on the control qubit before the CNOT is equivalent to an X gate on both the control and target qubits after the CNOT; a Z gate on the target qubit before the CNOT is equivalent to a Z gate on both the control and target qubits after the CNOT"> 
 
-[Source: IBM Quantum Platform](https://quantum.cloud.ibm.com/learning/images/courses/foundations-of-quantum-error-correction/fault-tolerant-quantum-computing/CNOT-error-propagation.svg)
+[Source of this Image: IBM Quantum Platform](https://quantum.cloud.ibm.com/learning/images/courses/foundations-of-quantum-error-correction/fault-tolerant-quantum-computing/CNOT-error-propagation.svg)
 
 Additionally, it achieves the clean ancilla primitive through interference. So, the ancilla qubit's state thereafter is the same as before the CNOT.
 
