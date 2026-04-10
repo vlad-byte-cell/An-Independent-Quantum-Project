@@ -57,7 +57,7 @@ Additionally (the second point being made here), the shared structure of the fir
 
 ![The CNOT's visualisation as a quantum circuit](CNOT_QuantumCircuit.svg)
 
-What's special about the decomposition (here comes the feature), it does not make use of a sequence of the two following equalities to provide the complete CNOT-matrix (up to the global phase): 
+What's special about the decomposition (here comes the feature), it does not make use of a sequence of the two following equalities to provide the complete CNOT-matrix (apart from global phase): 
 
 <img src="https://quantum.cloud.ibm.com/learning/images/courses/foundations-of-quantum-error-correction/fault-tolerant-quantum-computing/CNOT-error-propagation.svg" alt="CNOT error propagation" width="300" alt ="An X gate on the control qubit before the CNOT is equivalent to an X gate on both the control and target qubits after the CNOT; a Z gate on the target qubit before the CNOT is equivalent to a Z gate on both the control and target qubits after the CNOT">
 
